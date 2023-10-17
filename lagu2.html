@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lirik Lagu </title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .lyrics-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .summary {
+            font-style: italic;
+            font-size: 16px;
+        }
+        .lyrics {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: left;
+        }
+        audio {
+            width: 100%;
+        }
+        .highlight {
+            display: inline;
+            position: relative;
+            border-radius: 50%; /* Latar belakang bulat */
+        }
+        .highlight:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 100%;
+            background-color: rgba(0, 47, 255, 0.247);
+            opacity: 0;
+            transition: width 0.5s, opacity 0.5s;
+        }
+        .highlight.active:before {
+            width: 100%;
+            opacity: 1;
+        }
+        .music-player {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="lyrics-container">
+        <h1>Jaga Selalu Hatimu</h1>
+        <p class="summary">Program coding lyrics for kadek </p>
+        
+        <div class="lyrics">
+            <audio controls class="music-player">
+                <source src="sv.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <p>
+                <span class="highlight">ohhhh...</span> 
+            </p>
+            <p>
+                <span class="highlight">Tuhan Jagalah Jiwa Dan Raganya</span> 
+            </p>
+            <p>
+                <span class="highlight">Hidup Matiku Hanya Untuknya</span> 
+            </p>
+            <p>
+                <span class="highlight">Walau Ku Tak Bersama Bersamanya</span> 
+            </p>
+            <p>
+                <span class="highlight">Kau Jaga Selalu Hatimu Saat Jauh Dariku</span> 
+            </p>
+            <p>
+                <span class="highlight">Tunggu Aku Kembali'Ku Mencintaimu Selalu</span> 
+            </p>
+            <p>
+                <span class="highlight">Menyayangi Mu Sampai Akhir Menutup Mata</span> 
+            </p>
+            <p>
+                <span class="highlight">Kini'Ku Menemukan Mu</span> 
+            </p>
+            <p>
+                <span class="highlight">Di Ujung Waktu'Ku Patah Hati</span> 
+            </p>
+            <p>
+                <span class="highlight">Lelah Hati Menunggu</span> 
+            </p>
+            <p>
+                <span class="highlight">Cinta Yang Selamatkan Hidupku</span>
+            </p>
+            <p>
+                <span class="highlight">Resah Hati Ini Tanpanya Memikirkan Dia</span> 
+            </p>
+            <p>
+                <span class="highlight">S'lalu Tentang Dia Yang Memberikan</span>
+            </p>
+            <p>
+                <span class="highlight">Indahnya Cinta Untuk Ku Miliki</span> 
+            </p>
+            <p>
+                <span class="highlight">Menggenggam Indahnya Dunia</span> 
+            </p>
+            <p>
+                <span class="highlight">Sampai Waktu Menghentikn Semua</span> 
+            </p>
+            <p>
+                <span class="highlight">Tak Terkira Di Sampingmu</span> 
+            </p>
+            <p>
+                <span class="highlight">Adalah Hal Terindah Yang Pernah Ku Inginkan</span>
+            </p>
+            <p>
+                <span class="highlight">Tak Terkira Di Pelukmu</span>
+            </p>
+            <p>
+                <span class="highlight">Adalah Hal Terindah Yang Pernah Ku rasakan</span> 
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript untuk mengatur penandaan lirik
+        const audio = document.querySelector('audio');
+        const highlights = document.querySelectorAll('.highlight');
+
+        audio.addEventListener('timeupdate', function () {
+            const currentTime = Math.floor(audio.currentTime);
+
+            // Hapus penandaan dari semua elemen .highlight
+            highlights.forEach(function(highlight) {
+                highlight.classList.remove('active');
+            });
+
+            // Tambahkan penandaan ke elemen .highlight yang sesuai dengan waktu
+            if (currentTime >= 0 && currentTime < 1) {
+                highlights[0].classList.add('active');
+            } else if (currentTime >= 1 && currentTime < 10) {
+                highlights[1].classList. add('active');
+            } else if (currentTime >= 10 && currentTime < 15) {
+                highlights[2].classList.add('active');
+            } else if (currentTime >= 15 && currentTime < 24) {
+                highlights[3].classList.add('active');
+            } else if (currentTime >= 24 && currentTime < 30) {
+                highlights[4].classList.add('active');
+            } else if (currentTime >= 30 && currentTime < 39) {
+                highlights[5].classList.add('active');
+            } else if (currentTime >= 39 && currentTime < 47) {
+                highlights[6].classList.add('active');
+            } else if (currentTime >= 47 && currentTime < 51) {
+                highlights[7].classList.add('active');
+            } else if (currentTime >= 51 && currentTime < 57) {
+                highlights[8].classList.add('active');
+            } else if (currentTime >= 51&& currentTime < 61) {
+                highlights[9].classList.add('active');
+            } else if (currentTime >= 61 && currentTime < 70) {
+                highlights[10].classList.add('active');
+            } else if (currentTime >= 70 && currentTime < 77) {
+                highlights[11].classList.add('active');
+            } else if (currentTime >= 77 && currentTime < 81) {
+                highlights[12].classList.add('active');
+            } else if (currentTime >= 81 && currentTime < 86) {
+                highlights[13].classList.add('active');
+            } else if (currentTime >= 86 && currentTime < 91) {
+                highlights[14].classList.add('active');
+            } else if (currentTime >= 91 && currentTime < 96) {
+                highlights[15].classList.add('active');
+            } else if (currentTime >= 96 && currentTime < 101) {
+                highlights[16].classList.add('active');
+            } else if (currentTime >= 101 && currentTime < 107) {
+                highlights[17].classList.add('active');
+            } else if (currentTime >= 107 && currentTime < 122) {
+                highlights[18].classList.add('active');
+            } else if (currentTime >= 122 && currentTime < 122) {
+                highlights[19].classList.add('active');
+                
+            }
+            // Lanjutkan pola ini untuk setiap baris lirik
+        });
+    </script>
+</body>
+</html>
